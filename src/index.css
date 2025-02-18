@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900;
+}
+
+.quiz-gradient {
+  background: linear-gradient(210deg, #4338ca 0%, #3b82f6 50%, #06b6d4 100%);
+}
+
+.answer-button {
+  @apply w-full p-4 text-left rounded-lg transition-all border-2 hover:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-opacity-50;
+}
+
+.answer-button-default {
+  @apply bg-gray-800 border-gray-700 text-gray-100;
+}
+
+.answer-button-correct {
+  @apply bg-green-900 border-green-500 text-green-100;
+}
+
+.answer-button-incorrect {
+  @apply bg-red-900 border-red-500 text-red-100;
+}
+
+.hint-button {
+  @apply flex items-center text-sm transition-colors;
+}
+
+.hint-button-enabled {
+  @apply text-cyan-400 hover:text-cyan-300;
+}
+
+.hint-button-disabled {
+  @apply text-gray-600 cursor-not-allowed;
+}
